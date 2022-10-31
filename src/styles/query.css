@@ -1,5 +1,5 @@
 @media (min-width: 690px) {
-    .header-section .header-title{
+    .header-section .header-title {
         font-size: 2rem;
     }
     
@@ -26,6 +26,9 @@
 @media (min-width:950px){
     .header-section .header-form{
         width: 55%;
+    }
+    .header-form button{
+        width: 8%;
     }
 
     .content-section{
