@@ -1,0 +1,73 @@
+:root{
+    --very-dark-gray: hsl(0, 0%, 17%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+body{
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+}
+.main-wrapper{
+    /* width: 80%; */
+}
+
+.header-section{
+    color: white;
+    background: url('./../../images/pattern-bg.png') ;
+    background-size: cover;
+    display: flex;
+     flex-direction: column;
+    align-items: center; 
+    height: 18rem ;
+}
+
+.header-section .header-form {
+    width: 100%;
+}
+.header-form{
+    display: flex;
+    justify-content: center;
+}
+.header-form input{
+    width: 65%;
+    height: 2.7rem;
+    border-radius: 1rem 0 0 1rem;
+    border: none;
+    padding: .5rem 1rem;
+    font-size: 18px;
+}
+.header-form button{
+    width: 12%;
+    border-radius: 0 1rem 1rem 0;
+    border: none;
+    background-color: var(--very-dark-gray);
+}
+
+.content-section{
+    width: 85%;
+    margin: 0 auto;
+    position: absolute;
+    top: 10rem;
+    left: 7%;
+    border-radius: 1rem;
+    background-color: white;
+    text-align: center;
+    padding: 1rem 0; 
+}
+.result-data{
+    margin: 1rem;
+}
+.result-data .title{
+    font-weight: bolder;
+    color: var(--dark-gray);
+
+}
+.result-data .data{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.map-section{
+    background-color: black;
+    height: 60vh;
+}
