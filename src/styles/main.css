@@ -38,8 +38,12 @@ body{
 }
 .header-form button{
     width: 12%;
+    height: 3.7rem;
     border-radius: 0 1rem 1rem 0;
     border: none;
+    background-color: black;
+}
+.header-form button:hover{
     background-color: var(--very-dark-gray);
 }
 
