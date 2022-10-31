@@ -35,6 +35,10 @@ body{
     border: none;
     padding: .5rem 1rem;
     font-size: 18px;
+}.header-form input:hover{
+    cursor: pointer;
+}.header-form input:focus-visible{
+    outline: none;
 }
 .header-form button{
     width: 12%;
@@ -42,9 +46,11 @@ body{
     border-radius: 0 1rem 1rem 0;
     border: none;
     background-color: black;
-}
-.header-form button:hover{
+}.header-form button:hover{
     background-color: var(--very-dark-gray);
+    cursor: pointer ;
+    transition: all;
+    transition-duration: 300ms;
 }
 
 .content-section{
