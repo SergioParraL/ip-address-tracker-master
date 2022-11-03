@@ -43,34 +43,36 @@ const dataConstruction = (obj) =>{
     const {ip,location: {region}, location: {timezone}, isp} = obj
     const dataExtrated = [ip,region,timezone,isp]
     nodeListElements.forEach((element,index) => {
-        element.textContent = dataExtrated[index]
+        const contentElement = element.textContent
+        element.textContent = `${contentElement} ${dataExtrated[index]}`
     });
 }
 window.addEventListener('load',()=>{
     const input = document.querySelector('input')
     const buttom = document.querySelector('button')
-    if(!sessionStorage.ip == ''){
-        fetchData(`${$key}${$getSessionStorage}`)
-            .then(response => response.json())
-            .then(resp => {
-                    dataConstruction(resp)
-                })
-            .catch(err => console.error())
-    }else{
-        fetchData($ownIp)
-            .then(response => response.json())
-            .then(data => {
-                const ip = data.ip 
-                const url = `${$key}${ip}`
-                fetchData(url)
-                    .then(response => response.json())
-                    .then(resp => {
-                            dataConstruction(resp)
-                            sessionStorage.setItem('ip', ip)
-                        })
-                    .catch(err => console.error())
-        })
-    }
+    dataConstruction(obj)
+    // if(!sessionStorage.ip == ''){
+    //     fetchData(`${$key}${$getSessionStorage}`)
+    //         .then(response => response.json())
+    //         .then(resp => {
+    //                 dataConstruction(resp)
+    //             })
+    //         .catch(err => console.error())
+    // }else{
+    //     fetchData($ownIp)
+    //         .then(response => response.json())
+    //         .then(data => {
+    //             const ip = data.ip 
+    //             const url = `${$key}${ip}`
+    //             fetchData(url)
+    //                 .then(response => response.json())
+    //                 .then(resp => {
+    //                         dataConstruction(resp)
+    //                         sessionStorage.setItem('ip', ip)
+    //                     })
+    //                 .catch(err => console.error())
+    //     })
+    // }
     buttom.addEventListener('click', (e)=>{
         e.preventDefault()
         const ip = input.value
