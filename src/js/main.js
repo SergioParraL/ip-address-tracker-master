@@ -1,4 +1,4 @@
-const $key = 'https://geo.ipify.org/api/v2/country,city?apiKey=at_v0aAmU3cs0TLq3OJkFwdekKhZENGl&ipAddress='
+const $key = 'https://geo.ipify.org/api/v2/country,city?apiKey=at_v0aAmU3cs0TLq3OJkFwdekKhZENGl&ipAddress=&domain='
 let $getSessionStorage = sessionStorage.getItem('ip')
 const $ownIp = 'https://api.ipify.org?format=json'
 const fetchData = (url) =>{
@@ -69,4 +69,3 @@ window.addEventListener('load',()=>{
             .then(data => dataConstruction(data))
     })
 })
-
