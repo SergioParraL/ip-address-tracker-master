@@ -27,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Preview for the IP address tracker coding challenge](./desing/desktop-preview.jpg)
+![Preview for the IP address tracker coding challenge](./design/desktop-preview.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/SergioParraL/ip-address-tracker-master)
-- Live Site URL: [Add live site URL here](https://sergioparral.github.io/ip-address-tracker-master/)
+- Solution URL: [https://github.com/SergioParraL/ip-address-tracker-master]
+- Live Site URL: [https://sergioparral.github.io/ip-address-tracker-master]
 
 ## My process
 
