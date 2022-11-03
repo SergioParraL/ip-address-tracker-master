@@ -39,7 +39,6 @@ const fetchData = (url) =>{
     return fetch(url)
 }
 const dataConstruction = (obj) =>{
-    console.log(obj)
     const nodeListElements = document.querySelectorAll('.data')
     const {ip,location: {region}, location: {timezone}, isp} = obj
     const dataExtrated = [ip,region,timezone,isp]
@@ -51,7 +50,6 @@ window.addEventListener('load',()=>{
     const input = document.querySelector('input')
     const buttom = document.querySelector('button')
     if(!sessionStorage.ip == ''){
-        console.log('We have a IP')
         fetchData(`${$key}${$getSessionStorage}`)
             .then(response => response.json())
             .then(resp => {
@@ -59,7 +57,6 @@ window.addEventListener('load',()=>{
                 })
             .catch(err => console.error())
     }else{
-        console.log('search IP')
         fetchData($ownIp)
             .then(response => response.json())
             .then(data => {
@@ -76,7 +73,6 @@ window.addEventListener('load',()=>{
     }
     buttom.addEventListener('click', (e)=>{
         e.preventDefault()
-        console.log(input.value)
         const ip = input.value
         const url = `${$key}${ip}`
         fetchData(url)
