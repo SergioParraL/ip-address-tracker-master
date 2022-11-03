@@ -14,6 +14,14 @@
   
   <link rel="stylesheet" href="./src/styles/main.css">
   <link rel="stylesheet" href="./src/styles/query.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+     integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+     crossorigin=""/>
+
+     <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+     integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+     crossorigin=""></script>
   
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -37,23 +45,23 @@
     <article class="content-section">
       <div class="result-data">
         <div class="title">IP ADDRESS</div>
-        <div id="ip" class="data"></div>
+        <div id="ip" name="" class="data"></div>
       </div>
       <div class="result-data">
         <div class="title">LOCATION</div>
-        <div id="city" class="data"></div>
+        <div id="city" name="" class="data"></div>
       </div>
       <div class="result-data">
         <div class="title">TIMEZONE</div>
-        <div id="timezone" class="data">UTC</div>
+        <div id="timezone" name="UTC" class="data"></div>
       </div>
       <div class="result-data">
         <div class="title">ISP</div>
-        <div id="is" class="data"></div>
+        <div id="is" name="" class="data"></div>
       </div>
     </article>
   </section>
-  <section class="map-section"></section>  
+  <section id="map" class="map-section"></section>  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/SergioParraL">Sergio Parra</a>.

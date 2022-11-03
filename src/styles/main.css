@@ -60,6 +60,7 @@ body{
     background-color: white;
     text-align: center;
     padding: 1rem 0; 
+    z-index: 10;
 }
 .result-data{
     margin: 1rem;
@@ -79,7 +80,10 @@ body{
     height: 60vh;
 }
 
-
+#map{
+    height: 500px;
+    z-index: 1;
+}
 .attribution { 
     font-size: 15px; 
     text-align: center; 
