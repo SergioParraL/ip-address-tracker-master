@@ -6,6 +6,10 @@ body{
     font-size: 14px;
     font-family: 'Rubik', sans-serif;
     margin: 0;
+    background: var(--dark-gray);
+}
+.shadow{
+    box-shadow: 1px 18px 17px var(--very-dark-gray);
 }
 
 .header-section{
@@ -87,7 +91,7 @@ body{
 .attribution { 
     font-size: 15px; 
     text-align: center; 
-    margin: 1rem;
+    margin: 2rem;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 

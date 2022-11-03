@@ -21,13 +21,7 @@
 
      <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
      integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
-     crossorigin=""></script>
-  
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+     crossorigin=""></script>  
 </head>
 <body>
   <section class="main-wrapper">
@@ -36,13 +30,13 @@
         IP Address Tracker
       </h1>
       <form class="header-form" action="#">
-        <input type="text" placeholder="Search for any IP address or domain">
-        <button>
+        <input class="shadow" type="text" placeholder="Search for any IP address or domain">
+        <button class="shadow">
           <img src="./images/icon-arrow.svg" alt="icon arrow">
         </button>
       </form>
     </header>
-    <article class="content-section">
+    <article class="content-section shadow">
       <div class="result-data">
         <div class="title">IP ADDRESS</div>
         <div id="ip" name="" class="data"></div>
@@ -61,7 +55,7 @@
       </div>
     </article>
   </section>
-  <section id="map" class="map-section"></section>  
+  <section id="map" class="map-section shadow"></section>  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/SergioParraL">Sergio Parra</a>.
