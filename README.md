@@ -1,6 +1,6 @@
 # Frontend Mentor - IP address tracker solution
 
-This is a solution to the [IP address tracker challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [IP address tracker challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0).
 
 ## Table of contents
 
@@ -31,7 +31,6 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/SergioParraL/ip-address-tracker-master]
 - Live Site URL: [https://sergioparral.github.io/ip-address-tracker-master]
 
 ## My process
@@ -90,5 +89,5 @@ This is a project for practice the css grid and media query. In general for prac
 ## Author
 
 - Website - [Sergio Parra](https://sergioparral.github.io/PortFolio/)
-- Frontend Mentor - [@SergioParraL](https://www.frontendmentor.io/profile/SergioParraL)
+- LinkedIn -[Sergio Parra](https://www.linkedin.com/in/sergioparral/)
 - Twitter - [@Parranopolis00](https://twitter.com/Parranopolis00)
